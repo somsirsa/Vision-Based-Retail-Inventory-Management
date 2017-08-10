@@ -46,7 +46,7 @@ picPeriod = float(sys.argv[2])        # seconds
 file_name = 'photo_history.txt'
 
 # get access token to authenticate session
-dbx = dropbox.Dropbox('iq1yt0o1cDkAAAAAAAAEymzRLL17cvXvJQYh_wATYjh9KjtPRoD8ZRtdTNr-YwrU')
+dbx = dropbox.Dropbox('<your_dropbox_token>')
 
 # make camera object
 camera = picamera.PiCamera()
