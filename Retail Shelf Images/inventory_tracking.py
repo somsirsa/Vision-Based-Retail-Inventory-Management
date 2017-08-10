@@ -56,7 +56,7 @@ photo_history_list = 'photo_history.txt'	# the text file from dropbox which list
 
 if send2iphone:
 	# enter credentials to access the cloud
-	api = PyiCloudService('<your_email_address','your password')
+	api = PyiCloudService('<your_email_address','<your_password>')
 	iphone = api.devices['<apple_device>']
 
 # get access token to authenticate session
