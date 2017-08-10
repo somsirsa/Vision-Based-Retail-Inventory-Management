@@ -56,27 +56,11 @@ photo_history_list = 'photo_history.txt'	# the text file from dropbox which list
 
 if send2iphone:
 	# enter credentials to access the cloud
-	api = PyiCloudService('simon.kalouche@gmail.com','Applebucks')
-	iphone = api.devices['/No8NCNvg7czzHptNiecXBZzNoZZotRZNEri7BmvOytCQY75uWW2+OHYVNSUzmWV']
-	# # api = PyiCloudService('adam.selevan5@gmail.com', 'DiscoLabs1')
-	# # iphone = api.devices['BBuqlCRus9qa6+YmLWEjPHz6jMYyM5t7ToI0eu+IoZeUMPKD0Ag0euHYVNSUzmWV']
+	api = PyiCloudService('<your_email_address','your password')
+	iphone = api.devices['<apple_device>']
 
 # get access token to authenticate session
-dbx = dropbox.Dropbox('iq1yt0o1cDkAAAAAAAAEymzRLL17cvXvJQYh_wATYjh9KjtPRoD8ZRtdTNr-YwrU')
-
-
-# # Scrape Images from Item Master to Create Database
-# # Create an OpenerDirector with support for Basic HTTP Authentication...
-# auth_handler = urllib.request.HTTPBasicAuthHandler()
-# auth_handler.add_password(realm='PDQ Application',
-#                           uri='https://mahler:8092/site-updates.py',
-#                           user='skalouche',
-#                           passwd='disco2016')
-# opener = urllib.request.build_opener(auth_handler)
-# # ...and install it globally so it can be used with urlopen.
-# urllib.request.install_opener(opener)
-# urllib.request.urlopen('https://www.itemmaster.com/')
-# urllib.urlretrieve("http://www.digimouth.com/news/media/2011/09/google-logo.jpg", "local-filename.jpg")
+dbx = dropbox.Dropbox('<dropbox_token>')
 
 # align two images that may be slightly off
 def alignImages(im1, im2):
