@@ -74,7 +74,7 @@ def stopwatch(message):
 
 # ############# MAIN ################
 # # get access token to authenticate session
-# dbx = dropbox.Dropbox('iq1yt0o1cDkAAAAAAAAEymzRLL17cvXvJQYh_wATYjh9KjtPRoD8ZRtdTNr-YwrU')
+# dbx = dropbox.Dropbox('<your_dropbox_token>')
 
 # # upload file '1.JPG' to main directory (main directory is indicated by parameters folder='', and subfolder='') with a name 'first_pic.JPG'
 # # NOTE: an error occurs if you try to upload a file to the directory if there is already a file with the same name in that directory
